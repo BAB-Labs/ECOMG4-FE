@@ -1,22 +1,97 @@
-# Para usar el proyecto se requiere de la siguiente version de node
-## You are using Node.js 22.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.
+# 🛒 E-commerce SuperMercado - Frontend
 
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+![Sprint](https://img.shields.io/badge/Sprint-S2%20Foundation-blue)
+![React](https://img.shields.io/badge/React-18.3+-61DAFB?logo=react)
+![Vite](https://img.shields.io/badge/Vite-6.0+-646CFF?logo=vite)
+![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey)
 
-Currently, two official plugins are available:
+**Proyecto educativo de BAB LABS**  
+_Building a Better Future through Technology_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[🌐 BAB LABS](https://github.com/BAB-Labs) • [📋 Registro](https://forms.gle/fmHHoiPM7eXyPzVw6) • [💼 LinkedIn](https://www.linkedin.com/company/bab-labs)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📋 Tabla de Contenidos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Sobre el Proyecto](#-sobre-el-proyecto)
+- [Stack Tecnológico](#️-stack-tecnológico)
+- [Requisitos Previos](#-requisitos-previos)
+- [Instalación y Setup](#-instalación-y-setup)
+- [Scripts Disponibles](#-scripts-disponibles)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Design System](#-design-system)
+- [Convenciones de Código](#-convenciones-de-código)
+- [Git Workflow](#-git-workflow)
+- [Componentes Implementados](#-componentes-implementados)
+- [Roadmap](#-roadmap)
+- [Equipo](#-equipo)
+- [Licencia](#-licencia)
 
+---
 
+## 🎯 Sobre el Proyecto
 
+**E-commerce SuperMercado** es un proyecto educativo desarrollado como parte del programa de formación de **BAB LABS**, diseñado para enseñar desarrollo web moderno a través de un caso real de negocio.
+
+### Objetivo del MVP
+
+Construir una plataforma de e-commerce funcional para supermercado virtual, implementando:
+
+- Catálogo de productos con búsqueda y filtros
+- Carrito de compras persistente
+- Sistema de checkout básico
+- Panel administrativo para gestión de inventario
+
+### Contexto Educativo
+
+Este proyecto forma parte del modelo **Build-Apply-Bridge** de BAB LABS:
+
+- **Build:** Construimos un MVP testable con stack moderno
+- **Apply:** Los developers trainees aprenden practicando en proyecto real
+- **Bridge:** Preparamos talento técnico para el mercado laboral
+
+---
+
+## 🛠️ Stack Tecnológico
+
+### Core
+
+- **React** 18.3+ - Librería UI con Hooks
+- **Vite** 6.0+ - Build tool y dev server
+- **React Router DOM** 6+ - Navegación SPA
+- **JavaScript (ES6+)** - Lenguaje base
+
+### Estilos
+
+- **CSS Nativo** - Sin frameworks, usando CSS custom properties
+- **Design Tokens** - Sistema de diseño basado en variables CSS
+- **Desktop-First** - Diseño responsive desde el inicio
+
+### Herramientas de Calidad
+
+- **ESLint** 9+ - Linting de código
+- **Prettier** 3+ - Formateo de código
+- **Husky** 9+ - Git hooks
+- **Commitlint** - Validación de mensajes de commit
+
+### Package Manager
+
+- **pnpm** 9+ - Gestor de paquetes rápido y eficiente
+
+---
+
+## ⚙️ Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instalado:
+
+- **Node.js** 22.11.0 LTS o superior
+  ```bash
+  node --version
+  # v22.11.0 o superior
+  ```
