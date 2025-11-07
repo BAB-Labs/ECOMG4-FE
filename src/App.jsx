@@ -1,11 +1,12 @@
-import "./App.css";
+import { Header } from "./components/layout";
 
 function App() {
 	return (
 		<>
-			<div className="app_container">
-				<h1 className="app_title">HOLA MUNDO, EQUIPO FE</h1>
-			</div>
+			<Header />
+			<main style={{ textAlign: "center", marginTop: "4rem" }}>
+				<h1>HOLA MUNDO, EQUIPO FE</h1>
+			</main>
 		</>
 	);
 }
