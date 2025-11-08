@@ -123,6 +123,7 @@
 	--bg-red: #df2d25;
 	--bg-accent: #098fb4;
 	--bg-turquoise: #0c978f;
+	--bg-aqua: #0fb7b6;
 
 	/* === BACKGROUND LIGHT VARIANTS === */
 	--bg-light-blue: #edf3ff;
@@ -169,8 +170,8 @@
 	--icon-secondary: #2267e6;
 
 	/* === ICONS BASE SET === */
-	--icons-color-dark: #7c848f;
-	--icons-color-base: #fdfffe;
+	--icons-color-dark: #1d2532;
+	--icons-color-base: #9aa0aa;
 }
 
 body.darkTheme {
@@ -203,6 +204,7 @@ body.darkTheme {
 	--bg-red: #ff362b;
 	--bg-accent: #098fb4;
 	--bg-turquoise: #0c978f;
+	--bg-aqua: #0fb7b6;
 
 	/* === BACKGROUND LIGHT VARIANTS === */
 	--bg-light-blue: #edf3ff;
@@ -249,8 +251,8 @@ body.darkTheme {
 	--icon-color-accent: #098fb4;
 
 	/* === ICONS BASE SET === */
-	--icons-color-dark: #7c848f;
-	--icons-color-base: #384256;
+	--icons-color-dark: #1d2532;
+	--icons-color-base: #9aa0aa;
 }
 
 * {

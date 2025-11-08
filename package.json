@@ -23,6 +23,7 @@
 		"url": "https://github.com/BAB-Labs/ECOMG4-FE.git"
 	},
 	"dependencies": {
+		"lucide-react": "0.553.0",
 		"react": "^19.1.1",
 		"react-dom": "^19.1.1"
 	},
