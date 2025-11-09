@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 const Header = () => {
 	return (
 		<header className={styles.header}>
-			<div className={styles.logo}>🛒 ECOM Supermercado</div>
+			<div className={styles.logo}> ECOM Supermercado</div>
 
 			<nav className={styles.nav}>
 				<a href="#inicio">Inicio</a>
