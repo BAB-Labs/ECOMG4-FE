@@ -1,0 +1,69 @@
+/* Pages/not-found/not-found.css */
+.notfound-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #fafafa;
+	color: #333;
+	text-align: center;
+	padding: 20px;
+}
+
+.notfound-content {
+	z-index: 2;
+}
+
+.notfound-title {
+	font-size: 8rem;
+	font-weight: bold;
+	color: #ff4b2b;
+	margin: 0;
+}
+
+.notfound-text {
+	font-size: 1.5rem;
+	margin: 10px 0;
+}
+
+.notfound-subtext {
+	font-size: 1rem;
+	color: #666;
+	margin-bottom: 30px;
+}
+
+.notfound-button {
+	background-color: #ff4b2b;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 12px 25px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.notfound-button:hover {
+	background-color: #ff6f3c;
+	transform: scale(1.05);
+}
+
+.notfound-bg {
+	position: absolute;
+	bottom: 10%;
+}
+
+.notfound-image {
+	width: 200px;
+	opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+	.notfound-title {
+		font-size: 5rem;
+	}
+	.notfound-image {
+		width: 150px;
+	}
+}
