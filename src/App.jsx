@@ -1,12 +1,7 @@
-import "./App.css";
+import { Header } from "./Components/layout";
 
 function App() {
-	return (
-		<>
-			<div className="app_container">
-				<h1 className="app_title">HOLA MUNDO, EQUIPO FE</h1>
-			</div>
-		</>
-	);
+	return <Header />;
 }
+
 export default App;
