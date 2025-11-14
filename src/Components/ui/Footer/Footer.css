@@ -22,13 +22,12 @@
 .info {
 	grid-area: info;
 	padding: 10px;
-	max-width: 400px;
+	max-width: 100%;
 	/* Para limitar el ancho del texto y mejorar legibilidad */
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 	/* Mejor separación */
-	background-color: aquamarine;
 }
 
 .info_group {
@@ -122,35 +121,51 @@
 .shortcuts {
 	grid-area: shortcuts;
 	padding: 10px;
-	max-width: 400px;
+	max-width: 100%;
 	/* Para limitar el ancho del texto y mejorar legibilidad */
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 	/* Mejor separación */
-	background-color: aquamarine;
+}
+
+.shortcuts_title {
+	font-size: var(--font-size-h5);
+	font-weight: var(--font-weight-regular);
+}
+
+.shortcuts > p {
+	padding-left: 30px;
 }
 
 .clients {
 	grid-area: clients;
 	padding: 10px;
-	max-width: 400px;
+	max-width: 100%;
 	/* Para limitar el ancho del texto y mejorar legibilidad */
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 	/* Mejor separación */
-	background-color: aquamarine;
+}
+
+.clients_title {
+	font-size: var(--font-size-h5);
+	font-weight: var(--font-weight-regular);
 }
 
 .contact {
 	grid-area: contact;
 	padding: 10px;
-	max-width: 400px;
+	max-width: 100%;
 	/* Para limitar el ancho del texto y mejorar legibilidad */
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 	/* Mejor separación */
-	background-color: aquamarine;
+}
+
+.contact_title {
+	font-size: var(--font-size-h5);
+	font-weight: var(--font-weight-regular);
 }

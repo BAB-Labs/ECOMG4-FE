@@ -1,6 +1,8 @@
 import { icons } from "../../../Styles/icons";
+import { Button, Input } from "../index";
 import "./Footer.css";
-export const Footer = () => {
+
+export default function Footer() {
 	return (
 		<footer id="footer_static">
 			<section className="footer_sections">
@@ -32,25 +34,40 @@ export const Footer = () => {
 					</div>
 				</div>
 				<div className="shortcuts">
-					<span>Enalces Rapidos</span>
-					<ul>
-						<li>Inicio</li>
-						<li>Productos</li>
-						<li>Categorias</li>
-						<li>Ofertas</li>
-					</ul>
+					<span className="shortcuts_title">Enlaces Rapidos</span>
+					<p>Inicio</p>
+					<p>Productos</p>
+					<p>Categorias</p>
+					<p>Ofertas</p>
 				</div>
 				<div className="clients">
-					<span>Atencion al CLiente</span>
+					<span className="clients_title">Atencion al Cliente</span>
 					<p>Centro de Ayuda</p>
 					<p>Envios y Devoluciones</p>
 					<p>Terminos y Condiciones</p>
 					<p>Politica de Privacidad</p>
 				</div>
 				<div className="contact">
-					<span>Contacto</span>
+					<span className="contact_title">Contacto</span>
+					<ul>
+						<li>soporte@ecomg4.com</li>
+						<li>+1(555)123-4567</li>
+						<li>123 Calle Principal, Ciudad</li>
+					</ul>
+					<div>
+						icon <span>Newsletter</span>
+						<p>Suscribete y recibe ofertas exclusivas</p>
+						<div style={{ display: "flex" }}>
+							<Input placeholder={"tu@email.com"} />
+							<Button
+								imgAlt={"Boton para newsletter"}
+								title={"Hola mundo"}
+								imgSrc={<icons.iconoFlechaDerecha.arguments />}
+							/>
+						</div>
+					</div>
 				</div>
 			</section>
 		</footer>
 	);
-};
+}
