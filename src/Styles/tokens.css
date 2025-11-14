@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	/* === SPACING === */
+	--spacing-xs: 4px;
+	/* Extra Small */
+	--spacing-sm: 8px;
+	/* Small */
+	--spacing-md: 16px;
+	/* Medium */
+	--spacing-lg: 24px;
+	/* Large */
+	--spacing-xl: 32px;
+	/* Extra Large */
+
+	/* === FONT FAMILIES === */
+	--font-family-roboto: "Roboto", sans-serif;
+
+	/* === FONT SIZES === */
+	--font-size-display: 64px;
+	/* Display (titulares grandes, landing pages, hero sections) */
+	--font-size-h1: 48px;
+	/* Heading 1 */
+	--font-size-h2: 40px;
+	/* Heading 2 */
+	--font-size-h3: 32px;
+	/* Heading 3 */
+	--font-size-h4: 24px;
+	/* Heading 4 */
+	--font-size-h5: 20px;
+	/* Heading 5 */
+	--font-size-h6: 16px;
+	/* Heading 6 */
+
+	/* === TEXT & BODY === */
+	--font-size-body-lg: 18px;
+	/* Body Large - textos principales destacados */
+	--font-size-body-md: 16px;
+	/* Body Medium - texto estándar de párrafos */
+	--font-size-body-sm: 14px;
+	/* Body Small - texto secundario, información auxiliar */
+	--font-size-body-xs: 12px;
+	/* Body Extra Small - detalles o etiquetas */
+
+	/* === SUBTITLES === */
+	--font-size-subtitle1: 16px;
+	/* Subtitle 1 */
+	--font-size-subtitle2: 14px;
+	/* Subtitle 2 */
+
+	/* === BORDER RADIUS === */
+	--radius-xs: 2px;
+	/* Extra Small */
+	--radius-sm: 4px;
+	/* Small */
+	--radius-md: 8px;
+	/* Medium */
+	--radius-lg: 12px;
+	/* Large */
+	--radius-xl: 16px;
+	/* Extra Large */
+	--radius-round: 50%;
+	/* Full Circle (para avatares, botones circulares, etc.) */
+
+	/* === DIMENSIONS (BREAKPOINTS) === */
+	--dimension-xs: 360px;
+	/* Phones small */
+	--dimension-sm: 640px;
+	/* Phones large */
+	--dimension-md: 768px;
+	/* Tablets */
+	--dimension-lg: 1024px;
+	/* Laptops */
+	--dimension-xl: 1440px;
+	/* Desktops */
+
+	/* === LETTER SPACING === */
+	--letter-xl: 1px;
+	/* Decorative */
+	--letter-lg: 0.5px;
+	/* Buttons */
+	--letter-md: 0.25px;
+	/* Subtitles */
+	--letter-sm: 0px;
+	/* Normal text */
+	--letter-xs: -0.5px;
+	/* Headings */
+
+	/* === FONT WEIGHTS === */
+	--font-weight-regular: 400;
+	/* Regular */
+	--font-weight-semi-bold: 600;
+	/* SemiBold */
+	--font-weight-bold: 700;
+	/* Bold */
+
+	/* === TEXT COLORS === */
+	--text-primary: #2267e6;
+	--text-secondary: #0c948a;
+	--text-accent: #098fb4;
+	--text-base: #151c2b;
+	--text-dark: #ffffff;
+	--text-subtitle: #7c848f;
+	--text-color-btn: #fdfffe;
+	--text-color-green: #248755;
+
+	/* === BACKGROUND COLORS === */
+	--bg-blue: #255ed9;
+	--bg-lila: #8432d1;
+	--bg-success: #00a43b;
+	--bg-neutral: #151c2b;
+	--bg-purple: #6e48c2;
+	--bg-body: #fdfffe;
+	--bg-warning: #fdc700;
+	--bg-orange: #f36418;
+	--bg-secondary: #0c948a;
+	--bg-info: #0090b5;
+	--bg-error: #ff465d;
+	--bg-yellow: #eab91b;
+	--bg-pink: #de2d7d;
+	--bg-primary: #2267e6;
+	--bg-green: #18a74d;
+	--bg-red: #df2d25;
+	--bg-accent: #098fb4;
+	--bg-turquoise: #0c978f;
+
+	/* === BACKGROUND LIGHT VARIANTS === */
+	--bg-light-blue: #edf3ff;
+	--bg-light-orange: #f87715;
+
+	/* === BACKGROUND DARK VARIANTS === */
+	--bg-dark-blue: #0d1323;
+	--bg-dark-yellow: #d49806;
+
+	/* === BACKGROUND NEUTRAL / CARD / BETWEEN === */
+	--bg-between-body: #f9fafc;
+	--bg-card-base: #feffff;
+	--bg-gray-switch-theme: #e1e3e8;
+	--bg-social-media-icons: #1d2532;
+	--bg-contact-icons: #181e2d;
+
+	/* === BACKGROUND OPACITY COLORS === */
+	--bg-opacity-blue: #eff6ff;
+	--bg-opacity-green: #f0fdf4;
+	--bg-opacity-orange: #fff7ed;
+	--bg-opacity-purple: #f0fdf4;
+
+	/* === BUTTON COLORS === */
+	--btn-primary: #2267e6;
+	--btn-secondary: #0c948a;
+	--btn-accent: #098fb4;
+	--btn-white: #ffffff;
+
+	/* === BUTTON OUTLINE COLORS === */
+	--btn-outline-primary: #2267e6;
+	--btn-outline-secondary: #0c948a;
+	--btn-outline-accent: #098fb4;
+
+	/* === ICON COLORS === */
+	--icon-color-blue: #2867eb;
+	--icon-color-orange: #f36418;
+	--icon-color-green: #18a74d;
+	--icon-color-lila: #973aed;
+	--icon-color-yellow: #eab91b;
+	--icon-color-accent: #098fb4;
+
+	/* === ICON PRIMARY / SECONDARY === */
+	--icon-primary: #0c948a;
+	--icon-secondary: #2267e6;
+
+	/* === ICONS BASE SET === */
+	--icons-color-dark: #7c848f;
+	--icons-color-base: #fdfffe;
+}
+
+body.darkTheme {
+	/* === TEXT COLORS === */
+	--text-primary: #2267e6;
+	--text-secondary: #0c948a;
+	--text-accent: #098fb4;
+	--text-base: #ffffff;
+	--text-dark: #0f182a;
+	--text-subtitle: #7c848f;
+	--text-color-btn: #fdfffe;
+	--text-color-green: #70cf8c;
+
+	/* === BACKGROUND COLORS === */
+	--bg-blue: #2a6bf7;
+	--bg-lila: #a03dfc;
+	--bg-success: #00d994;
+	--bg-neutral: #ffffff;
+	--bg-purple: #915eff;
+	--bg-body: #0e1628;
+	--bg-warning: #fcb700;
+	--bg-orange: #f36418;
+	--bg-secondary: #2267e6;
+	--bg-info: #00bafe;
+	--bg-error: #ff677a;
+	--bg-yellow: #fcc91e;
+	--bg-pink: #ff338f;
+	--bg-primary: #0c948a;
+	--bg-green: #1ab854;
+	--bg-red: #ff362b;
+	--bg-accent: #098fb4;
+	--bg-turquoise: #0c978f;
+
+	/* === BACKGROUND LIGHT VARIANTS === */
+	--bg-light-blue: #edf3ff;
+	--bg-light-orange: #ff9f2b;
+
+	/* === BACKGROUND DARK VARIANTS === */
+	--bg-dark-blue: #0d1323;
+	--bg-dark-yellow: #d49806;
+
+	/* === BACKGROUND NEUTRAL / CARD / BETWEEN === */
+	--bg-between-body: #f9fafc;
+	--bg-card-base: #1c2739;
+	--bg-gray-switch-theme: #39475a;
+	--bg-social-media-icons: #1d2532;
+	--bg-contact-icons: #181e2d;
+
+	/* === BACKGROUND OPACITY COLORS === */
+	--bg-opacity-blue: #172645;
+	--bg-opacity-green: #182c33;
+	--bg-opacity-orange: #2b212a;
+	--bg-opacity-purple: #272346;
+
+	/* === BUTTON COLORS === */
+	--btn-primary: #2267e6;
+	--btn-secondary: #0c948a;
+	--btn-accent: #098fb4;
+	--btn-white: #0f182a;
+
+	/* === BUTTON OUTLINE COLORS === */
+	--btn-outline-primary: #0c948a;
+	--btn-outline-secondary: #2267e6;
+	--btn-outline-accent: #098fb4;
+
+	/* === ICON COLORS === */
+	--icon-color-blue: #2867eb;
+	--icon-color-orange: #f36418;
+	--icon-color-green: #18a74d;
+	--icon-color-lila: #973aed;
+	--icon-color-yellow: #eab91b;
+
+	/* === ICON PRIMARY / SECONDARY / ACCENT === */
+	--icon-primary: #0c948a;
+	--icon-secondary: #2267e6;
+	--icon-color-accent: #098fb4;
+
+	/* === ICONS BASE SET === */
+	--icons-color-dark: #7c848f;
+	--icons-color-base: #384256;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--bg-body);
+	font-family: var(--font-family-roboto);
+	transition: 0.7s ease-in-out;
+}
+
+.darkTheme {
+	transition: 0.7s;
+	background-color: var(--bg-body);
+}

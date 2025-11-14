@@ -1,0 +1,24 @@
+.btnPrimary {
+	color: white;
+	background-color: #1aae50;
+	font-weight: normal;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px;
+	border: none;
+	cursor: pointer;
+	width: 150px;
+	height: 40px;
+	font-size: 16px;
+}
+.btnPrimary:hover {
+	background-color: #31e670ff;
+	transition: background-color 0.3s ease;
+}
+
+.img-icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+}
