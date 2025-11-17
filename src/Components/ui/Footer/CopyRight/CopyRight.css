@@ -1,5 +1,6 @@
 .copyright {
 	display: flex;
+	background-color: var(--bg-dark-blue);
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;

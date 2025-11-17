@@ -1,11 +1,55 @@
-.inputPrimary {
-	padding: 10px 10px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	font-size: 16px;
+/* Wrapper para futuros íconos adentro */
+.input_wrapper {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
 
+.input_icon {
+	position: absolute;
+	left: 12px;
+	display: flex;
+	align-items: center;
+	pointer-events: none;
+}
+
+/* Estilo base del input */
+.inputPrimary {
+	width: 100%;
+	padding: 10px 14px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: var(--radius-lg);
+	background-color: rgba(255, 255, 255, 0.12);
+	color: var(--text-white);
+	font-size: var(--font-size-body-md);
+	transition: all 0.25s ease;
+	backdrop-filter: none;
+	-webkit-backdrop-filter: none;
+}
+
+/* Input sin fondo (transparente) */
+.input_transparent {
+	background-color: transparent !important;
+	border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Input con blur (glassmorphism) */
+.input_blur {
+	backdrop-filter: blur(25px) saturate(120%) !important;
+	-webkit-backdrop-filter: blur(25px) saturate(120%) !important;
+	background-color: rgba(255, 255, 255, 0.06) !important;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Focus */
 .inputPrimary:focus {
-	border-color: #1aae50;
 	outline: none;
+	border-color: var(--btn-primary);
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+::placeholder {
+	color: var(--text-white);
+	opacity: 0.5;
 }

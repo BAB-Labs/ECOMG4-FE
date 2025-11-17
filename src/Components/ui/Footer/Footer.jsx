@@ -23,21 +23,21 @@ export const Footer = () => {
 						</p>
 
 						<div className="info_icons">
-							<IconsWrapper color1="var(--icons-color-dark)">
+							<IconsWrapper color1="var(--icons-color-dark)" size={42}>
 								<icons.iconoInstagram
 									width={20}
 									color="var(--icons-color-base)"
 								></icons.iconoInstagram>
 							</IconsWrapper>
 
-							<IconsWrapper color1="var(--icons-color-dark)">
+							<IconsWrapper color1="var(--icons-color-dark)" size={42}>
 								<icons.iconoTwitter
 									width={20}
 									color="var(--icons-color-base)"
 								/>
 							</IconsWrapper>
 
-							<IconsWrapper color1="var(--icons-color-dark)">
+							<IconsWrapper color1="var(--icons-color-dark)" size={42}>
 								<icons.iconoFacebook
 									width={20}
 									color="var(--icons-color-base)"
@@ -71,7 +71,7 @@ export const Footer = () => {
 						<ul className="contact_list">
 							<li>
 								<div className="contact_item">
-									<IconsWrapper color1="var(--icons-color-dark)">
+									<IconsWrapper color1="var(--icons-color-dark)" size={42}>
 										<icons.iconoCorreo
 											width={20}
 											color="var(--icons-color-base)"
@@ -83,7 +83,7 @@ export const Footer = () => {
 
 							<li>
 								<div className="contact_item">
-									<IconsWrapper color1="var(--icons-color-dark)">
+									<IconsWrapper color1="var(--icons-color-dark)" size={42}>
 										<icons.iconoTelefono
 											width={20}
 											color="var(--icons-color-base)"
@@ -95,7 +95,7 @@ export const Footer = () => {
 
 							<li>
 								<div className="contact_item">
-									<IconsWrapper color1="var(--icons-color-dark)">
+									<IconsWrapper color1="var(--icons-color-dark)" size={42}>
 										<icons.iconoPuntoMapa
 											width={20}
 											color="var(--icons-color-base)"
@@ -114,7 +114,9 @@ export const Footer = () => {
 
 						<div className="newsletter">
 							<div className="newsletter_header">
-								<icons.iconoBolsaCompras width={20} color="var(--bg-aqua)" />
+								<IconsWrapper size={20}>
+									<icons.iconoBolsaCompras width={20} color="var(--bg-aqua)" />
+								</IconsWrapper>
 								<span className="newsletter_subtitle">Newsletter</span>
 							</div>
 
@@ -123,8 +125,16 @@ export const Footer = () => {
 							</p>
 
 							<div className="newsletter_form">
-								<Input placeholder="tu@email.com" />
-								<Button />
+								<Input placeholder={"tu@email.com"} blur />
+								<Button
+									color1="var(--btn-primary)"
+									color2="var(--btn-accent)"
+									padding="10px 14px"
+									radius={14}
+									extraClassName="btn_shadow_soft"
+								>
+									<icons.iconoFlechaDerecha width={20} color="white" />
+								</Button>
 							</div>
 						</div>
 					</div>
