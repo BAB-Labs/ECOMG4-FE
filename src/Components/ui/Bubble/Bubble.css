@@ -1,0 +1,10 @@
+.bubble {
+	border-radius: var(--radius-round);
+
+	filter: blur(60px);
+
+	backdrop-filter: blur(40px) saturate(130%);
+	-webkit-backdrop-filter: blur(40px) saturate(130%);
+
+	opacity: 0.9;
+}

@@ -1,15 +1,20 @@
 #footer_static {
+	position: relative;
 	display: flex;
 	background-color: var(--bg-dark-blue);
-	color: var(--text-base);
+	color: var(--text-white);
 }
 
 .footer_sections {
 	display: grid;
 	width: 100%;
-	background-color: var(--bg-dark-blue);
-	padding: 100px 70px;
-
+	padding: 100px;
+	background: linear-gradient(
+		90deg,
+		rgba(29, 199, 226, 0.006) 0%,
+		var(--bg-dark-blue) 50%,
+		var(--bg-dark-blue) 100%
+	);
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-areas: "info shortcuts clients contact";
 	gap: 40px;
@@ -18,16 +23,14 @@
 	align-items: start;
 }
 
-/* --- Columna IZQUIERDA (info) --- */
 .info {
 	grid-area: info;
 	padding: 10px;
 	max-width: 100%;
-	/* Para limitar el ancho del texto y mejorar legibilidad */
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
-	/* Mejor separación */
+	gap: 25px;
+	z-index: 10;
 }
 
 .info_group {
@@ -47,16 +50,10 @@
 	font-weight: var(--font-weight-semi-bold);
 	border-radius: var(--radius-lg);
 
-	background: linear-gradient(
-		150deg,
-		var(--bg-primary) 0%,
-		var(--bg-aqua) 55%,
-		var(--bg-turquoise) 99%
-	);
-	color: white;
+	background: linear-gradient(150deg, var(--bg-primary) 0%, var(--bg-aqua));
+	color: var(--text-white);
 
 	flex-shrink: 0;
-	/* Evita que se reduzca en layouts ajustados */
 }
 
 .info_group_labels {
@@ -68,12 +65,7 @@
 .info_title {
 	font-size: var(--font-size-h4);
 	font-weight: var(--font-weight-semi-bold);
-	background: linear-gradient(
-		92deg,
-		var(--bg-primary) 0%,
-		var(--bg-aqua) 55%,
-		var(--bg-turquoise) 99%
-	);
+	background: linear-gradient(92deg, var(--bg-primary) 0%, var(--bg-aqua));
 
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -81,52 +73,31 @@
 }
 
 .info_text {
-	font-size: var(--font-size-body-xs);
+	font-size: var(--font-size-body-sm);
 	font-weight: var(--font-weight-regular);
 	color: var(--text-subtitle);
 }
 
 .info > p {
-	font-size: var(--font-size-body-sm);
-	color: var(--text-color-btn);
+	font-size: var(--font-size-body-md);
+	color: var(--text-white);
 	line-height: 1.5;
 	max-width: 280px;
-	/* Mejora la lectura del párrafo */
 }
 
-/* --- ICONOS --- */
 .info_icons {
 	display: flex;
 	gap: 12px;
-}
-
-.icon_button {
-	width: 42px;
-	height: 42px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	background: var(--icons-color-dark);
-	color: var(--icons-color-base);
-
-	border-radius: var(--radius-lg);
-	border: 1px solid var(--bg-gray-switch-theme);
-	transition: 0.25s ease;
-	cursor: pointer;
-	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .shortcuts {
 	grid-area: shortcuts;
 	padding: 10px;
 	max-width: 100%;
-	/* Para limitar el ancho del texto y mejorar legibilidad */
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	/* Mejor separación */
+	z-index: 10;
 }
 
 .shortcuts_title {
@@ -134,19 +105,32 @@
 	font-weight: var(--font-weight-regular);
 }
 
-.shortcuts > p {
+.shortcuts > a {
+	text-decoration: none;
+	color: var(--text-white);
 	padding-left: 30px;
+}
+
+.shortcuts > a:visited,
+.shortcuts > a:active,
+.shortcuts > a:hover,
+.shortcuts > a:focus {
+	color: var(--text-white);
+	text-decoration: none;
+}
+
+.shortcuts > a:hover {
+	opacity: 0.7;
 }
 
 .clients {
 	grid-area: clients;
 	padding: 10px;
 	max-width: 100%;
-	/* Para limitar el ancho del texto y mejorar legibilidad */
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	/* Mejor separación */
+	z-index: 10;
 }
 
 .clients_title {
@@ -154,18 +138,150 @@
 	font-weight: var(--font-weight-regular);
 }
 
+.clients > a {
+	text-decoration: none;
+	color: var(--text-white);
+	padding-left: 30px;
+}
+
+.clients > a:visited,
+.clients > a:active,
+.clients > a:hover,
+.clients > a:focus {
+	color: var(--text-white);
+	/* Mantiene siempre el mismo color */
+	text-decoration: none;
+}
+
+.clients > a:hover {
+	opacity: 0.7;
+}
+
 .contact {
 	grid-area: contact;
 	padding: 10px;
-	max-width: 100%;
-	/* Para limitar el ancho del texto y mejorar legibilidad */
+	width: 100%;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	gap: 20px;
-	/* Mejor separación */
+	z-index: 10;
 }
 
 .contact_title {
 	font-size: var(--font-size-h5);
 	font-weight: var(--font-weight-regular);
+}
+
+.contact_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.contact_list li a {
+	text-decoration: none;
+	color: var(--text-white);
+	font-size: var(--font-size-span);
+	transition: opacity 0.2s ease;
+}
+
+.contact_list li a:visited,
+.contact_list li a:active,
+.contact_list li a:focus {
+	color: var(--text-white);
+}
+
+.contact_list li a:hover {
+	opacity: 0.7;
+}
+
+.contact_item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.newsletter {
+	width: 100%;
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	gap: 20px;
+	border-radius: var(--radius-xl);
+	backdrop-filter: blur(25px) saturate(124%);
+	-webkit-backdrop-filter: blur(25px) saturate(124%);
+	background-color: rgba(255, 255, 255, 0.095);
+	border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.newsletter_header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: var(--font-weight-medium);
+}
+
+.newsletter_subtitle {
+	font-size: var(--font-size-body-lg);
+	font-weight: var(--font-weight-semi-bold);
+}
+
+.newsletter_text {
+	font-size: var(--font-size-body-md);
+	opacity: 0.7;
+}
+
+.newsletter_form {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+@media (max-width: 639px) {
+	.footer_sections {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"info"
+			"shortcuts"
+			"clients"
+			"contact";
+		padding: 40px 20px;
+		gap: 30px;
+	}
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+	.footer_sections {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"info shortcuts"
+			"clients contact";
+		padding: 60px 40px;
+		gap: 40px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.footer_sections {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"info shortcuts clients"
+			"contact contact contact";
+		padding: 80px;
+		gap: 50px;
+	}
+}
+
+@media (min-width: var(--dimension-xl)) {
+	.footer_sections {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: "info shortcuts clients contact";
+		padding: 100px;
+		gap: 40px;
+	}
 }

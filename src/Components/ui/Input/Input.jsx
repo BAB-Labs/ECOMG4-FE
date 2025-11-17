@@ -1,5 +1,5 @@
 import "./Input.css";
 
-export default function Input({ placeholder }) {
+export const Input = ({ placeholder }) => {
 	return <input placeholder={placeholder} className="inputPrimary" />;
-}
+};

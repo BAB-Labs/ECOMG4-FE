@@ -1,4 +1,4 @@
-import Footer from "./Components/ui/Footer/Footer";
+import { Footer } from "./Components/ui/index";
 import "./App.css";
 function App() {
 	return (

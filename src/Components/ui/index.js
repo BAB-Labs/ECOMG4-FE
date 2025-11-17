@@ -1,4 +1,7 @@
-export { default as Button } from "./Button/Button";
-export { default as Footer } from "./Footer/Footer";
-export { default as Input } from "./Input/Input";
+export { Button } from "./Button/Button";
+export { Footer } from "./Footer/Footer";
+export { Input } from "./Input/Input";
+export { IconsWrapper } from "./Icons/IconsWrapper";
+export { CopyRight } from "./Footer/CopyRight/CopyRight";
+export { Bubble } from "./Bubble/Bubble";
 export * from "./index";

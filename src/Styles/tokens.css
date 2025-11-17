@@ -103,6 +103,7 @@
 	--text-subtitle: #7c848f;
 	--text-color-btn: #fdfffe;
 	--text-color-green: #248755;
+	--text-white: #fff;
 
 	/* === BACKGROUND COLORS === */
 	--bg-blue: #255ed9;
@@ -123,7 +124,7 @@
 	--bg-red: #df2d25;
 	--bg-accent: #098fb4;
 	--bg-turquoise: #0c978f;
-	--bg-aqua: #0fb7b6;
+	--bg-aqua: #1fc9e2;
 
 	/* === BACKGROUND LIGHT VARIANTS === */
 	--bg-light-blue: #edf3ff;
@@ -184,6 +185,7 @@ body.darkTheme {
 	--text-subtitle: #7c848f;
 	--text-color-btn: #fdfffe;
 	--text-color-green: #70cf8c;
+	--text-white: #fff;
 
 	/* === BACKGROUND COLORS === */
 	--bg-blue: #2a6bf7;
@@ -204,7 +206,7 @@ body.darkTheme {
 	--bg-red: #ff362b;
 	--bg-accent: #098fb4;
 	--bg-turquoise: #0c978f;
-	--bg-aqua: #0fb7b6;
+	--bg-aqua: #1fc9e2;
 
 	/* === BACKGROUND LIGHT VARIANTS === */
 	--bg-light-blue: #edf3ff;
