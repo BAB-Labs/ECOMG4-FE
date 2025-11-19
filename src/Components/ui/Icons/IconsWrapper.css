@@ -1,0 +1,7 @@
+.icon_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: "0.25s ease",;
+}

@@ -9,12 +9,12 @@
 	display: grid;
 	width: 100%;
 	padding: 100px;
-	background: linear-gradient(
-		90deg,
-		rgba(29, 199, 226, 0.006) 0%,
-		var(--bg-dark-blue) 50%,
-		var(--bg-dark-blue) 100%
-	);
+	/* background: linear-gradient(90deg,
+			rgba(29, 199, 226, 0.006) 0%,
+			var(--bg-dark-blue) 50%,
+			var(--bg-dark-blue) 100%); */
+	background-color: var(--bg-dark-blue);
+
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-areas: "info shortcuts clients contact";
 	gap: 40px;
@@ -277,7 +277,7 @@
 	}
 }
 
-@media (min-width: var(--dimension-xl)) {
+@media (min-width: 1440px) {
 	.footer_sections {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-areas: "info shortcuts clients contact";

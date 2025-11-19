@@ -1,0 +1,24 @@
+.btn_basic {
+	width: 100%;
+	color: inherit;
+
+	padding: 8px 12px;
+	border-radius: var(--radius-md);
+	border: 1px solid #ccc;
+	outline: none;
+	transition:
+		border-color 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+/* Focus con estilo suave */
+.btn_basic:focus {
+	border-color: var(--btn-primary);
+	box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.25);
+}
+
+/* Placeholder visible y consistente */
+.btn_basic::placeholder {
+	color: #888;
+	opacity: 1;
+}

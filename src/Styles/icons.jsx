@@ -7,6 +7,10 @@ import {
 	Phone,
 	Mail,
 	ShoppingBag,
+	Truck,
+	Shield,
+	Clock,
+	Award,
 } from "lucide-react";
 
 export const icons = {
@@ -18,4 +22,8 @@ export const icons = {
 	iconoTelefono: Phone,
 	iconoCorreo: Mail,
 	iconoBolsaCompras: ShoppingBag,
+	iconoCamion: Truck,
+	iconoEscudo: Shield,
+	iconoReloj: Clock,
+	iconoCalidadPremium: Award,
 };

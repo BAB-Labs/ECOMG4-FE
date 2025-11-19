@@ -1,5 +1,4 @@
 # VSCode
-.vscode/*
 !.vscode/extensions.json
 
 # IDEs Y Proyectos

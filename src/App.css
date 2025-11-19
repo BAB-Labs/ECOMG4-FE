@@ -1,3 +1,19 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--bg-body);
+	font-family: var(--font-family-roboto);
+	transition: background-color 0.7s ease-in-out;
+}
+
+.darkTheme {
+	background-color: var(--bg-body);
+}
+
 .app_container {
 	display: flex;
 	align-items: center;
