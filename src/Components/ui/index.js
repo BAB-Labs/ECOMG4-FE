@@ -1,4 +1,15 @@
-import Button from "./Button";
-import Input from "./Input";
-
-export { Button, Input };
+export * from "./Bubble/Bubble";
+export * from "./Button/Button";
+export * from "./Footer/Banner/Banner";
+export * from "./Footer/CopyRight/CopyRight";
+export * from "./Footer/Data/BannerData";
+export * from "./Footer/Data/FooterData";
+export * from "./Footer/Footer";
+export * from "./Footer/Items/FooterClients";
+export * from "./Footer/Items/FooterContact";
+export * from "./Footer/Items/FooterInfo";
+export * from "./Footer/Items/FooterShortcuts";
+export * from "./Icons/IconsWrapper";
+export * from "./Input/Input";
+export * from "./Input/InputBasic";
+export * from "./index";

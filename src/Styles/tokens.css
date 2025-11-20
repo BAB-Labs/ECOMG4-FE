@@ -103,6 +103,7 @@
 	--text-subtitle: #7c848f;
 	--text-color-btn: #fdfffe;
 	--text-color-green: #248755;
+	--text-white: #fff;
 
 	/* === BACKGROUND COLORS === */
 	--bg-blue: #255ed9;
@@ -123,6 +124,7 @@
 	--bg-red: #df2d25;
 	--bg-accent: #098fb4;
 	--bg-turquoise: #0c978f;
+	--bg-aqua: #1fc9e2;
 
 	/* === BACKGROUND LIGHT VARIANTS === */
 	--bg-light-blue: #edf3ff;
@@ -169,8 +171,8 @@
 	--icon-secondary: #2267e6;
 
 	/* === ICONS BASE SET === */
-	--icons-color-dark: #7c848f;
-	--icons-color-base: #fdfffe;
+	--icons-color-dark: #1d2532;
+	--icons-color-base: #9aa0aa;
 }
 
 body.darkTheme {
@@ -183,6 +185,7 @@ body.darkTheme {
 	--text-subtitle: #7c848f;
 	--text-color-btn: #fdfffe;
 	--text-color-green: #70cf8c;
+	--text-white: #fff;
 
 	/* === BACKGROUND COLORS === */
 	--bg-blue: #2a6bf7;
@@ -203,6 +206,7 @@ body.darkTheme {
 	--bg-red: #ff362b;
 	--bg-accent: #098fb4;
 	--bg-turquoise: #0c978f;
+	--bg-aqua: #1fc9e2;
 
 	/* === BACKGROUND LIGHT VARIANTS === */
 	--bg-light-blue: #edf3ff;
@@ -249,23 +253,6 @@ body.darkTheme {
 	--icon-color-accent: #098fb4;
 
 	/* === ICONS BASE SET === */
-	--icons-color-dark: #7c848f;
-	--icons-color-base: #384256;
-}
-
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-body {
-	background-color: var(--bg-body);
-	font-family: var(--font-family-roboto);
-	transition: 0.7s ease-in-out;
-}
-
-.darkTheme {
-	transition: 0.7s;
-	background-color: var(--bg-body);
+	--icons-color-dark: #1d2532;
+	--icons-color-base: #9aa0aa;
 }
