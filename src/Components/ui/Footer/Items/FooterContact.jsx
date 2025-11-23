@@ -53,7 +53,6 @@ export const FooterContact = () => {
 						color1="var(--btn-primary)"
 						color2="var(--btn-accent)"
 						padding="10px 14px"
-						radius={14}
 						extraClassName="btn_shadow_soft"
 					>
 						<icons.iconoFlechaDerecha width={20} color="white" />

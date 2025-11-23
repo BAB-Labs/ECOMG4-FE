@@ -33,51 +33,6 @@
 	z-index: 10;
 }
 
-.info_group {
-	display: flex;
-	align-items: center;
-	gap: 12px;
-}
-
-.info_square_logo {
-	display: flex;
-	width: 48px;
-	height: 48px;
-	justify-content: center;
-	align-items: center;
-
-	font-size: var(--font-size-body-lg);
-	font-weight: var(--font-weight-semi-bold);
-	border-radius: var(--radius-lg);
-
-	background: linear-gradient(150deg, var(--bg-primary) 0%, var(--bg-aqua));
-	color: var(--text-white);
-
-	flex-shrink: 0;
-}
-
-.info_group_labels {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.info_title {
-	font-size: var(--font-size-h4);
-	font-weight: var(--font-weight-semi-bold);
-	background: linear-gradient(92deg, var(--bg-primary) 0%, var(--bg-aqua));
-
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-}
-
-.info_text {
-	font-size: var(--font-size-body-sm);
-	font-weight: var(--font-weight-regular);
-	color: var(--text-subtitle);
-}
-
 .info > p {
 	font-size: var(--font-size-body-md);
 	color: var(--text-white);

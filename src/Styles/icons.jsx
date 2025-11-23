@@ -11,6 +11,13 @@ import {
 	Shield,
 	Clock,
 	Award,
+	Search,
+	User,
+	ShoppingCart,
+	Moon,
+	Sun,
+	Menu,
+	ChevronDown,
 } from "lucide-react";
 
 export const icons = {
@@ -26,4 +33,11 @@ export const icons = {
 	iconoEscudo: Shield,
 	iconoReloj: Clock,
 	iconoCalidadPremium: Award,
+	iconoBuscar: Search,
+	iconoUsuario: User,
+	iconoCarritoCompra: ShoppingCart,
+	iconoLuna: Moon,
+	iconoSol: Sun,
+	iconoMenuHamburguesa: Menu,
+	iconoDesplegarAbajo: ChevronDown,
 };
