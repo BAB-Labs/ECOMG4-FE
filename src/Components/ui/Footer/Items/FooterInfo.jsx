@@ -1,17 +1,12 @@
 import { IconsWrapper } from "../../Icons/IconsWrapper";
 import { footerSocialIcons } from "../Data/FooterData";
+import { Logo } from "../../Logo/Logo";
 
 export const FooterInfo = () => {
 	return (
 		<div className="info">
-			<div className="info_group">
-				<div className="info_square_logo">E</div>
-
-				<div className="info_group_labels">
-					<h3 className="info_title">ECOMG4</h3>
-					<span className="info_text">Supermercado Digital</span>
-				</div>
-			</div>
+			{/* Componente de logo separado que se ocupa en el header */}
+			<Logo />
 
 			<p>
 				Tu supermercado digital de confianza. Productos frescos y de calidad

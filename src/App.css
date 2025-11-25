@@ -6,12 +6,11 @@
 
 body {
 	background-color: var(--bg-body);
+	color: var(--text-base);
 	font-family: var(--font-family-roboto);
-	transition: background-color 0.7s ease-in-out;
-}
-
-.darkTheme {
-	background-color: var(--bg-body);
+	transition:
+		background-color 0.5s ease-in-out,
+		color 0.5s ease-in-out;
 }
 
 .app_container {

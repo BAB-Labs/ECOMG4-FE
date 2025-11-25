@@ -7,8 +7,14 @@
     <title>ECOMG4-FE</title>
   </head>
   <!-- Nota al quitar o poner la clase en el body, el color de la pagina debe cambiar, haciendo el darkmode y lighmode funcionar -->
-  <body class="darkTheme">
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
+    <script>
+    const theme = localStorage.getItem("theme");
+    if (theme === "darkTheme") {
+        document.body.classList.add("darkTheme");
+    }
+</script>
   </body>
 </html>

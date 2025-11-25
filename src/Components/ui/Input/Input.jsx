@@ -29,7 +29,7 @@ export const Input = ({
 					maxWidth,
 					padding,
 					paddingLeft: children && "45px",
-					borderColor,
+					border: borderColor,
 					borderRadius: "var(--radius-lg)",
 					backgroundColor,
 				}}

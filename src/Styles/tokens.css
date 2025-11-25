@@ -98,12 +98,12 @@
 	--text-primary: #2267e6;
 	--text-secondary: #0c948a;
 	--text-accent: #098fb4;
-	--text-base: #151c2b;
-	--text-dark: #ffffff;
+	--text-base: #242424;
 	--text-subtitle: #7c848f;
 	--text-color-btn: #fdfffe;
 	--text-color-green: #248755;
 	--text-white: #fff;
+	--text-dark: #242424;
 
 	/* === BACKGROUND COLORS === */
 	--bg-blue: #255ed9;
@@ -173,6 +173,11 @@
 	/* === ICONS BASE SET === */
 	--icons-color-dark: #1d2532;
 	--icons-color-base: #9aa0aa;
+
+	/* === DRK MODE / LIGHT MODE  === */
+	--toggle-bg: #c6c6c6;
+	--toggle-knob-bg: #fff;
+	--toggle-icon-color: #818181;
 }
 
 body.darkTheme {
@@ -181,11 +186,11 @@ body.darkTheme {
 	--text-secondary: #0c948a;
 	--text-accent: #098fb4;
 	--text-base: #ffffff;
-	--text-dark: #0f182a;
 	--text-subtitle: #7c848f;
 	--text-color-btn: #fdfffe;
 	--text-color-green: #70cf8c;
 	--text-white: #fff;
+	--text-dark: #242424;
 
 	/* === BACKGROUND COLORS === */
 	--bg-blue: #2a6bf7;
@@ -255,4 +260,9 @@ body.darkTheme {
 	/* === ICONS BASE SET === */
 	--icons-color-dark: #1d2532;
 	--icons-color-base: #9aa0aa;
+
+	/* === DRK MODE / LIGHT MODE  === */
+	--toggle-bg: #2d3b4a;
+	--toggle-knob-bg: #13181f;
+	--toggle-icon-color: #495563;
 }
