@@ -1,10 +1,13 @@
 import "./App.css";
-import { AppRouter } from "./Routes/AppRouter";
+// import { AppRouter } from "./Routes/AppRouter";
+import { Header, Footer } from "./Components/ui/index";
 
 function App() {
 	return (
 		<>
-			<AppRouter />
+			{/* <AppRouter /> */}
+			<Header />
+			<Footer />
 		</>
 	);
 }

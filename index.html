@@ -10,5 +10,11 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
+    <script>
+    const theme = localStorage.getItem("theme");
+    if (theme === "darkTheme") {
+        document.body.classList.add("darkTheme");
+    }
+</script>
   </body>
 </html>

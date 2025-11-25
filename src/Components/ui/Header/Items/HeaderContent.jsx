@@ -9,7 +9,7 @@ import { useChangeTheme } from "../../../../Hooks/useChangeTheme";
 export const HeaderContent = () => {
 	// Hook que se encarga de la logica del cambio de tema separado
 	// como buen uso de buenas practicas al tener un useEffect este se tiene que separar
-	const { isDark, toggleTheme } = useChangeTheme();
+	const { theme, toggleTheme } = useChangeTheme();
 
 	return (
 		<header className="header">
@@ -44,15 +44,15 @@ export const HeaderContent = () => {
 				<div className="header_right_side">
 					<button
 						type="button"
-						className={`header_toggle ${isDark ? "header_toggle--on" : ""}`}
+						className={`header_toggle ${theme === "darkTheme" ? "header_toggle--on" : ""}`}
 						onClick={toggleTheme}
 						aria-label="Cambiar de tema"
 					>
 						<div className="header_knob">
-							{isDark ? (
-								<icons.iconoSol className="header_toggle_icon" width={16} />
-							) : (
+							{theme === "darkTheme" ? (
 								<icons.iconoLuna className="header_toggle_icon" width={16} />
+							) : (
+								<icons.iconoSol className="header_toggle_icon" width={16} />
 							)}
 						</div>
 					</button>
