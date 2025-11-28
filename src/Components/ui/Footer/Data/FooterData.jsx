@@ -16,17 +16,17 @@ export const footerSocialIcons = [
 ];
 
 export const footerQuickLinks = [
-	{ label: "Inicio", href: "/home" },
-	{ label: "Productos", href: "/products" },
-	{ label: "Categorías", href: "/categories" },
-	{ label: "Ofertas", href: "/offers" },
+	{ label: "Inicio", href: "#home" },
+	{ label: "Productos", href: "#products" },
+	{ label: "Categorías", href: "#categories" },
+	{ label: "Ofertas", href: "#offers" },
 ];
 
 export const footerClientLinks = [
-	{ label: "Centro de Ayuda", href: "/help-center" },
-	{ label: "Envíos y Devoluciones", href: "/shipping-and-returns" },
-	{ label: "Términos y Condiciones", href: "/terms-and-conditions" },
-	{ label: "Política de Privacidad", href: "/privacy-policy" },
+	{ label: "Centro de Ayuda", href: "#help-center" },
+	{ label: "Envíos y Devoluciones", href: "#shipping-and-returns" },
+	{ label: "Términos y Condiciones", href: "#terms-and-conditions" },
+	{ label: "Política de Privacidad", href: "#privacy-policy" },
 ];
 
 export const footerContactItems = [
